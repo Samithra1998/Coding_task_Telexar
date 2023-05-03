@@ -12,6 +12,7 @@ import {
 import makeStyles from "./styles";
 import { useDispatch } from "react-redux";
 import { addExpenses } from "../../Action/expenses";
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import { Link } from "react-router-dom";
 
 const initialExpenseValues = {
@@ -37,7 +38,7 @@ const Expenses = () => {
   return (
     <Container component="main" maxWidth="xs">
       <Paper className={classes.paper} elevation={3}>
-        <Avatar className={classes.avatar}>{/* <LockOutlinedIcon /> */}</Avatar>
+        <Avatar className={classes.avatar}><MonetizationOnIcon/></Avatar>
         <Typography component="h1" variant="h5">
           Add Expenses
         </Typography>
